@@ -6,11 +6,8 @@
     "r3f",
     "react",
     "three",
-    "vite",
     "starter",
-    "react three fiber",
-    "sandbox",
-    "codesandbox"
+    "react three fiber"
   ],
   "author": "Benjamin Miles <talk@benjaminmiles.com> (https://github.com/benjaminmiles)",
   "repository": "github:benjaminmiles/react-three-vite",
@@ -22,20 +19,17 @@
     "react-dom": "18.2.0",
     "three": "0.154.0"
   },
-  "devDependencies": {
-    "@vitejs/plugin-react": "^4.0.3",
-    "vite": "^4.4.4"
-  },
   "scripts": {
-    "dev": "vite --host",
-    "sandbox": "APP_ENV=sandbox vite",
-    "build": "vite build",
-    "preview": "vite preview"
+    "dev": "react-scripts start",
+    "build": "esbuild src/index.jsx --bundle --outfile=out.js"
   },
   "browserslist": [
     ">0.2%",
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "esbuild": "0.19.3"
+  }
 }
